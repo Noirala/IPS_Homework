@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 61px;
+    height: 24px;
+    object-fit: contain;
+    margin: 0 111px 89px 480px;
+    font: 34px/2.26 "Crete Round", serif;
+    letter-spacing: 1.7px;
+    color: #060c31;
+}
+
+.main_text {
+    width: 496px;
+    height: 186px;
+    margin: 89px 196px 36px 480px;
+    font: 58px/1.1 "Crete Round", serif;
+    letter-spacing: 2.9px;
+    color: #060c31;
+}
+
+.text {
+    width: 416px;
+    height: 70px;
+    margin: 36px 271px 47px 480px;
+    font: 15px/1.87 "Lato", serif;
+    letter-spacing: 0.75px;
+    color: #060c31;
+}
+
+.get_button {
+    width: 152px;
+    height: 50px;
+    margin: 47px 20px 28px 480px;
+    border-radius: 25px;
+    border: solid 0 #fff;
+    background-color: #233fe2;
+    font: 15px/1.87 "Lato", serif;
+    color: #fff;
+}
+
+.create_button {
+    width: 164px;
+    height: 50px;
+    margin: 47px 352px 28px 20px;
+    border-radius: 25px;
+    border: solid 3px #fbb0b1;
+    background-color: #fff;
+    font: 15px/1.87 "Lato", serif;
+}
+
+.background {
+    width: 717px;
+    height: 569px;
+    margin: 29px 0 0 480px;
+    object-fit: contain;
+}
