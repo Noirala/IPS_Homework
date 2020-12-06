@@ -33,6 +33,7 @@ a,
 
 .text_bold{
     font: 600 20px/1.5 "Arial", sans-serif;
+    color: #333;
 }
 
 .dedicated_text{
