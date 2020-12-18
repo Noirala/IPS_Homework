@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.header{
+    margin: 60px 80px 0 86px;
+}
+
 .menu_item {
     display: inline;
     margin: 0 40px;
@@ -26,13 +30,11 @@
 }
 
 .logo {
-    margin: 60px 0 0 86px;
     display: inline;
 }
 
 .top_menu {
     float: right;
-    margin: 60px 80px 0 0;
     display: inline;
 }
 
@@ -95,8 +97,13 @@
 .footer {
     float: right;
     display: inline-block;
+    margin-bottom: 46px;
 }
 
 .footer_item {
-    margin: 0 100px 46px 0;
+    margin-right: 100px;
+}
+
+.clear{
+    clear: both;
 }
