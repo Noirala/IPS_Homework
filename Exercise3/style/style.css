@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+a:hover,
+button:hover,
+select:hover,
+label:hover {
+    cursor: pointer;
+}
+
 .main_button,
 .menu_button {
     font: 600 16px/16px "Montserrat", sans-serif;
@@ -234,4 +241,40 @@ header {
 .checkbox_text {
     font: 400 16px/22px "Roboto Condensed", sans-serif;
     color: #fff;
+}
+
+.author {
+    text-align: center;
+    margin: 126px auto 118px;
+    max-width: 734px;
+}
+
+.author_name {
+    font: 500 26px/31px "Montserrat", sans-serif;
+    color: #000;
+    margin-top: 20px;
+}
+
+.author_position,
+.author_activity {
+    font: 400 18px/27px "Roboto Condensed", sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.author_position {
+    margin-top: 9px;
+}
+
+.author_activity {
+    max-width: 626px;
+    margin: 24px auto 41px;
+}
+
+.society {
+    margin: 0 11px;
+}
+
+.footer {
+    background: #000;
+    padding: 35px 876px;
 }
