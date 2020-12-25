@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.header{
+header {
     position: sticky;
     top: 0;
     background: #fff;
 }
 
-.header .flex{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,14 +18,14 @@
     padding: 30px 120px;
 }
 
-.menu_link{
+.menu_link {
     text-decoration: none;
     font: 500 16px/20px "Montserrat", sans-serif;
     color: #000;
     margin-right: 87px;
 }
 
-.menu_button{
+.menu_button {
     margin-left: 12px;
     text-decoration: none;
     font: 600 16px/16px "Montserrat", sans-serif;
@@ -35,7 +35,7 @@
     padding: 19px 40px;
 }
 
-.first{
+.main {
     max-width: 1580px;
     margin: 42px auto auto;
     display: flex;
@@ -43,58 +43,59 @@
     align-items: center;
 }
 
-.first .main_text{
+.main_heading {
     font: 600 100px/122px "Montserrat", sans-serif;
     color: #000;
     margin-bottom: 5px;
 }
 
-.main_text .pink{
+.pink {
     color: #ee58b6;
 }
 
-.first .text{
+.main_text {
     font: 400 26px/31px "Roboto Condensed", sans-serif;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 65px;
     max-width: 545px;
 }
 
-.first .button{
+.main_button {
     font: 600 16px/16px "Montserrat", sans-serif;
     color: #fff;
     padding: 19px 83px;
     background: #05090c;
     border-radius: 4.59px;
+    text-decoration: none;
 }
 
-.second{
+.promo {
     height: 400px;
     background-color: #000;
     display: flex;
     align-items: center;
 }
 
-.second .wrapper{
+.promo_wrapper {
     width: 1180px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
-.wrapper .item{
+.promo_item {
     width: 337px;
     text-align: center;
 }
 
-.second .text{
+.promo_text {
     font: 400 22px/26px "Roboto Condensed", sans-serif;
     color: #fff;
     text-align: center;
     margin-top: 24px;
 }
 
-.third .block{
+.problem {
     max-width: 1136px;
     margin: 0 auto;
     display: flex;
@@ -102,32 +103,32 @@
     align-items: center;
 }
 
-.third .main_text{
+.problems_heading {
     font: 500 48px/61px "Montserrat", sans-serif;
     color: #000;
 }
 
-.third .text{
+.problems_text {
     font: 400 18px/24px "Roboto Condensed", sans-serif;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
 }
 
-.fourth{
+.oncourse {
     text-align: center;
 }
 
-.fourth .main_text{
+.oncourse_main_text {
     font: 500 48px/59px "Montserrat", sans-serif;
     color: #000;
 }
 
-.fourth .text{
+.skills_text {
     margin-top: 20px;
     color: #fff;
     font: 400 18px/21px "Roboto Condensed", sans-serif;
 }
 
-.grid{
+.skills {
     margin-top: 60px;
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -136,9 +137,13 @@
     justify-content: center;
 }
 
-.grid .item{
+.skills_item {
     text-align: left;
     padding: 32px;
     border-radius: 7px;
+    background: #000;
+}
+
+.fifth {
     background: #000;
 }
