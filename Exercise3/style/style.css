@@ -159,8 +159,22 @@ header {
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.3s;
-    transition-delay: 1.2s;
     transition-timing-function: ease;
+}
+
+.promo_item.first{
+    
+    transition-delay: 1.2s;
+}
+
+.promo_item.second{
+    
+    transition-delay: 1.4s;
+}
+
+.promo_item.third{
+    
+    transition-delay: 1.6s;
 }
 
 .loaded .promo_item {
@@ -180,6 +194,62 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.image_finances{
+    transform: translateX(-20px);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+    transition-delay: 1.9s;
+    transition-timing-function: ease;
+}
+
+.loaded .image_finances{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.problem_time{
+    transform: translateX(20px);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+    transition-delay: 1.9s;
+    transition-timing-function: ease;
+}
+
+.loaded .problem_time{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.problem_deadline{
+    transform: translateX(-20px);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+    transition-delay: 2.2s;
+    transition-timing-function: ease;
+}
+
+.loaded .problem_deadline{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.image_mindblowing{
+    transform: translateX(20px);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.3s;
+    transition-delay: 2.2s;
+    transition-timing-function: ease;
+}
+
+.loaded .image_mindblowing{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .problems_heading {
