@@ -15,12 +15,17 @@
         <a href="#">
             <img src="images/logo.jpg" alt="Don't do it">
         </a>
-        <nav>
+        <nav class="header_menu">
             <a href="#" class="menu_link">Что будет на курсе?</a>
             <a href="#" class="menu_link">Вопросы</a>
             <a href="#" class="menu_link">Автор</a>
             <a href="#" class="menu_button">Записаться на курс</a>
         </nav>
+        <div class="header_burger">
+            <div class="burger_line"></div>
+            <div class="burger_line"></div>
+            <div class="burger_line"></div>
+        </div>
     </header>
     <section class="main">
         <div class="dontdoit">
@@ -48,15 +53,15 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="problem">
+    <section class="problems">
+        <div class="problem problem_first">
             <img src="images/problems/finances.png" alt="Finances" class="image_finances">
             <div class="problem_time">
                 <h2 class="problems_heading">Ты не успеешь</h2>
                 <p class="problems_text">Всех творческих людей объединяет одна проблема - отсутствие времени на реализацию идей. Как прибавить суткам часы, рассмотрим в нашем курсе.</p>
             </div>
         </div>
-        <div class="problem">
+        <div class="problem problem_second">
             <div class="problem_deadline">
                 <h2 class="problems_heading">Опять дедлайн</h2>
                 <p class="problems_text">В мире, где столько всего интересного, когда же успевать жить?</p>
@@ -97,17 +102,15 @@
         <div class="subscribe_wrapper">
             <h2 class="subscribe_heading">Единственное, что нужно <span class="pink">сделать</span></h2>
             <form action="php/handler.php" method="get" class="subscribe_form">
-                <div>
-                    <input type="text" name="Name" placeholder="Ваше имя" class="subscribe_form_input">
-                    <input type="email" name="Email" placeholder="Email" class="subscribe_form_input">
-                    <select name="activity" class="subscribe_form_select">
-                        <option value="" disabled selected>Деятельность</option>
-                        <option value="programmer">Программист</option>
-                        <option value="designer">Дизайнер</option>
-                        <option value="marketer">Маркетолог</option>
-                    </select>
-                    <button type="submit" class="subscribe_form_button">Записаться на курс</button>
-                </div>
+                <input type="text" name="Name" placeholder="Ваше имя" class="subscribe_form_input">
+                <input type="email" name="Email" placeholder="Email" class="subscribe_form_input">
+                <select name="activity" class="subscribe_form_select">
+                    <option value="" disabled selected>Деятельность</option>
+                    <option value="programmer">Программист</option>
+                    <option value="designer">Дизайнер</option>
+                    <option value="marketer">Маркетолог</option>
+                </select>
+                <button type="submit" class="subscribe_form_button">Записаться на курс</button>
                 <div class="accept">
                     <input name="accept" type="checkbox" class="subscribe_form_checkbox" id="mailing">
                     <label for="mailing" class="checkbox_text">Согласен получать информационные материалы о старте курса</label>
@@ -130,4 +133,6 @@
         <img src="images/footer_logo.png" alt="Logo" class="footer_logo">
     </footer>
 </body>
-<script src="js/app.js"></script></html>
+<script src="js/app.js"></script>
+
+</html>

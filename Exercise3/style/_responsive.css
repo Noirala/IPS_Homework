@@ -7,6 +7,10 @@
         font-size: 6.5vw;
         line-height: 10vw;
     }
+    
+    .main {
+        width: 97%;
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -17,6 +21,12 @@
     .header {
         padding: 30px 40px;
     }
+    
+    .subscribe_form_input,
+    .subscribe_form_select,
+    .subscribe_form_button {
+    width: 23%;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -26,7 +36,70 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .problem_time{
-        
+    .image_finances,
+    .image_mindblowing{
+        width: 45%
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .header {
+        padding: 0 20px;
+    }
+    
+    .header_menu {
+        display: none;
+    }
+    
+    .header_burger {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main_button {
+        padding: 19px 43px;
+    }
+    
+    .skills {
+        margin-top: 6vw;
+        grid-gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .skills_item {
+        padding: 17px;
+    }
+    
+    .promo_text {
+        font-size: 20px;
+    }
+    
+    .problem {
+        width: 97%;
+    }
+    
+    .subscribe_form_input,
+    .subscribe_form_select {
+        padding: 5px 2px 5px 18px;
+    }
+    
+    .subscribe_form_button {
+        padding: 20px 25px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .promo_wrapper {
+        flex-direction: column;
+        padding: 70px 0;
+    }
+    
+    .promo_item.first,
+    .promo_item.second {
+        margin-bottom: 45px;
+    }
+    
+    .promo_text {
+        margin-top: 5px;
     }
 }
