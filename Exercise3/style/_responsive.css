@@ -40,6 +40,10 @@
     .image_mindblowing{
         width: 45%
     }
+    
+    .problem {
+        margin-top: 16.6vw;
+    }
 }
 
 @media screen and (max-width: 1150px) {
@@ -101,5 +105,227 @@
     
     .promo_text {
         margin-top: 5px;
+    }
+    
+    .subscribe_form {
+        max-width: 700px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .subscribe_form_input {
+        width: 43%;
+        margin-bottom: 17px;
+    }
+    
+    .subscribe_form_select,
+    .subscribe_form_button {
+        width: 47.5%;
+    }
+    
+    .subscribe_form_input,
+    .subscribe_form_select {
+        padding: 20px 2px 20px 28px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main_heading {
+        font-size: 5.5vw;
+    }
+    
+    .main_subtext {
+        font-size: 18px;
+    }
+    
+    .problems_heading,
+    .oncourse_heading,
+    .subscribe_heading {
+        font-size: 36px;
+    }
+    
+    .subscribe_wrapper {
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .main {
+        flex-direction: column;
+    }
+    
+    .main_text {
+        text-align: center;
+    }
+    
+    .main_heading {
+        font-size: 10vw;
+        margin-bottom: 30px;
+    }
+    
+    .main_subtext {
+        font-size: 24px;
+        margin-bottom: 35px;
+        max-width: 100%;
+    }
+    
+    .done {
+        max-width: 70%;
+        margin-top: 65px;
+    }
+    
+    .problems_heading,
+    .oncourse_heading,
+    .subscribe_heading {
+        font-size: 48px;
+    }
+    
+    .problem {
+        flex-direction: column;
+    }
+    
+    .image_finances {
+        order: 1;
+        width: 90%;
+    }
+    
+    .image_mindblowing {
+        width: auto;
+    }
+    
+    .problem_time,
+    .problem_deadline {
+        width: 90%;
+        text-align: center;
+    }
+    
+    .problems_text {
+        margin-bottom: 20px;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .skills_item {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .subscribe_form {
+        text-align: center;
+    }
+    
+    .subscribe_form_input {
+        width: 308px;
+    }
+    
+    .subscribe_form_select{
+        width: 340px;
+        margin-bottom: 17px;
+    }
+    
+    .subscribe_form_button {
+        width: 340px;
+        order: 1;
+    }
+    
+    .accept {
+        margin-top: 0;
+        width: 340px;
+        margin-bottom: 17px;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_heading {
+        font-size: 12vw;
+    }
+    
+    .main_subtext {
+        font-size: 22px;
+    }
+    
+    .main_button,
+    .subscribe_form_button {
+        padding: 20px 40px;
+    }
+    
+    .done {
+        max-width: 98%;
+    }
+    
+    .problems_heading,
+    .oncourse_heading,
+    .subscribe_heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .skills {
+        margin-top: 24px;
+    }
+    
+    .skills_text {
+        font-size: 16px;
+    }
+    
+    .problems_text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        height: 70px;
+    }
+    
+    .problem {
+        margin-bottom: 16.6vw;
+    }
+    
+    .problems_text {
+        font-size: 18px;
+    }
+    
+    .skills {
+        grid-gap: 15px;
+    }
+    
+    .image_mindblowing {
+        max-width: 90%;
+    }
+    
+    .author {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .subscribe {
+        margin-top: 150px;
+    }
+    
+    .promo_item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    
+    .subscribe_heading {
+        font-size: 38px;
     }
 }

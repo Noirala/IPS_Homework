@@ -87,7 +87,7 @@ label:hover {
     align-items: center;
 }
 
-.dontdoit {
+.main_text {
     transform: translateY(20px);
     opacity: 0;
     transition-property: opacity, transform;
@@ -96,7 +96,7 @@ label:hover {
     transition-timing-function: ease;
 }
 
-.loaded .dontdoit {
+.loaded .main_text {
     opacity: 1;
     transform: translateY(0);
 }
@@ -126,7 +126,7 @@ label:hover {
     color: #ee58b6;
 }
 
-.main_text {
+.main_subtext {
     font: 400 26px/31px "Roboto Condensed", sans-serif;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 65px;
@@ -282,7 +282,7 @@ label:hover {
 }
 
 .problems_text {
-    font: 400 18px/24px "Roboto Condensed", sans-serif;
+    font: 400 22px/26px "Roboto Condensed", sans-serif;
     color: rgba(0, 0, 0, 0.7);
 }
 
@@ -348,6 +348,13 @@ label:hover {
 .subscribe_form_select {
     padding: 19px 2px 19px 28px;
     width: 340px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url('../images/select_mark.png');
+    background-repeat: no-repeat;
+    background-position: top 50% right 29.25px;
+    background-color: #fff;
 }
 
 .subscribe_form_button {
@@ -406,6 +413,7 @@ label:hover {
     text-align: center;
     margin: 126px auto 118px;
     max-width: 734px;
+    padding: 0 15px;
 }
 
 .author_name {
