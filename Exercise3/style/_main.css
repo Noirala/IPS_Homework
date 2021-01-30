@@ -333,6 +333,7 @@ label:hover {
     max-width: 1450px;
     margin: 0 auto;
     padding: 125px 15px 238px;
+    text-align: center;
 }
 
 .subscribe_form {
@@ -406,7 +407,6 @@ label:hover {
 
 .checkbox_text {
     font: 400 16px/22px "Roboto Condensed", sans-serif;
-    color: #fff;
 }
 
 .author {
@@ -447,4 +447,97 @@ label:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.scrollUp_button {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    right: 25px;
+    bottom: 25px;
+    background: url(../images/scrollTop.png);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease;
+}
+
+.subscribe_button {
+    font: 600 16px/19.5px "Mantserrat", sans-serif;
+    color: #fff;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 20px 40px;
+    width: 340px;
+    margin: 0 auto;
+}
+
+.overlay {
+    position:  fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: collapse;
+    opacity: 0;
+    background: #fff;
+    width: 34%;
+    text-align: center;
+}
+
+.close_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.scrollUp_button.visible,
+.popup.visible,
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup_form {
+    text-align: center;
+}
+
+.popup_heading {
+    font: 500 26px/31.2px "Mantserrat", sans-serif;
+    margin-bottom: 33px;
+}
+
+.popup_input {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.popup_select {
+    margin-bottom: 35px;
+    width: 75%;
+}
+
+.popup_button {
+    margin: 35px 0 92px;
+    width: 75%;
+}
+
+.popup_accept {
+    width: 75%;
+    margin: 0 auto;
 }
