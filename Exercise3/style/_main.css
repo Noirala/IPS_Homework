@@ -30,7 +30,8 @@ label:hover {
 
 .problems_heading,
 .oncourse_heading,
-.subscribe_heading {
+.subscribe_heading,
+.faq_heading {
     font: 500 48px/61px "Montserrat", sans-serif;
 }
 
@@ -342,6 +343,61 @@ label:hover {
     flex-wrap: wrap;
 }
 
+.faq {
+    width: 720px;
+    margin: 173px auto 0;
+    padding: 0 15px;
+}
+
+.faq_heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.faq_accordeon {
+    border-bottom: 1px solid #000;
+    margin-bottom: 37px;
+}
+
+.faq_questions {
+    font: 500 26px/31px 'Montserrat', sans-serif;
+    color: #000;
+    cursor: pointer;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #000;
+}
+
+.faq_questions::after {
+    content: '';
+    float: right;
+    background-image: url(../images/plus.svg);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.visible::after {
+    transition: 0.5s ease-in-out;
+    transform: rotate(135deg);
+}
+
+.faq_panel {
+    display: none;
+}
+
+.visible.faq_panel {
+    display: block;
+}
+
+.panel_text {
+    font: 400 18px/24px 'Roboto Condensed', sans-serif;
+    width: 626px;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 17px 0 26px;
+}
+
 .subscribe_form_input {
     width: 310px;
 }
@@ -359,7 +415,7 @@ label:hover {
 }
 
 .subscribe_form_button {
-    font: 600 16px/19.5px "Mantserrat", sans-serif;
+    font: 600 16px/19.5px "Montserrat", sans-serif;
     color: #fff;
     background: #000;
     border: 2px solid #fff;
@@ -451,8 +507,8 @@ label:hover {
 
 .scrollUp_button {
     position: fixed;
-    width: 65px;
-    height: 65px;
+    width: 66px;
+    height: 66px;
     right: 25px;
     bottom: 25px;
     background: url(../images/scrollTop.png);
@@ -463,7 +519,7 @@ label:hover {
 }
 
 .subscribe_button {
-    font: 600 16px/19.5px "Mantserrat", sans-serif;
+    font: 600 16px/19.5px "Montserrat", sans-serif;
     color: #fff;
     background: #000;
     border: 2px solid #fff;
@@ -471,6 +527,7 @@ label:hover {
     padding: 20px 40px;
     width: 340px;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .overlay {
@@ -493,7 +550,7 @@ label:hover {
     visibility: collapse;
     opacity: 0;
     background: #fff;
-    width: 34%;
+    width: 650px;
     text-align: center;
 }
 
@@ -515,29 +572,46 @@ label:hover {
 
 .popup_form {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .popup_heading {
-    font: 500 26px/31.2px "Mantserrat", sans-serif;
+    font: 500 26px/31.2px "Montserrat", sans-serif;
     margin-bottom: 33px;
 }
 
 .popup_input {
     margin-bottom: 20px;
-    width: 70%;
+    width: 93%;
+}
+
+.error.popup_input {
+    border: 1px solid red;
 }
 
 .popup_select {
     margin-bottom: 35px;
-    width: 75%;
+    width: 100%;
+}
+
+.error.popup_select {
+    border: 1px solid red;
 }
 
 .popup_button {
     margin: 35px 0 92px;
-    width: 75%;
+    width: 100%;
 }
 
 .popup_accept {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.error.subscribe_form_checkbox + label::before {
+    border: 1px solid red;
 }

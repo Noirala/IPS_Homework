@@ -22,16 +22,20 @@
         padding: 30px 40px;
     }
     
-    .subscribe_form_input,
+    /*.subscribe_form_input,
     .subscribe_form_select,
     .subscribe_form_button {
     width: 23%;
-    }
+    }*/
 }
 
 @media screen and (max-width: 1300px) {
     .promo_wrapper {
         justify-content: space-around;
+    }
+    
+    .popup_button {
+        margin-bottom: 50px;
     }
 }
 
@@ -82,14 +86,14 @@
         width: 97%;
     }
     
-    .subscribe_form_input,
+    /*.subscribe_form_input,
     .subscribe_form_select {
         padding: 5px 2px 5px 18px;
     }
     
     .subscribe_form_button {
         padding: 20px 25px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 1000px) {
@@ -107,7 +111,7 @@
         margin-top: 5px;
     }
     
-    .subscribe_form {
+    /*.subscribe_form {
         max-width: 700px;
         margin: 0 auto;
         flex-wrap: wrap;
@@ -127,7 +131,7 @@
     .subscribe_form_input,
     .subscribe_form_select {
         padding: 20px 2px 20px 28px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 850px) {
@@ -141,16 +145,21 @@
     
     .problems_heading,
     .oncourse_heading,
-    .subscribe_heading {
+    .subscribe_heading,
+    .faq_heading {
         font-size: 36px;
     }
     
     .subscribe_wrapper {
         padding-bottom: 150px;
     }
+    
+    .faq {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 750px) {
     .main {
         flex-direction: column;
     }
@@ -177,7 +186,8 @@
     
     .problems_heading,
     .oncourse_heading,
-    .subscribe_heading {
+    .subscribe_heading,
+    .faq_heading {
         font-size: 48px;
     }
     
@@ -215,10 +225,18 @@
     .skills_item {
         text-align: center;
     }
+    
+    .panel_text {
+        width: 100%;
+    }
+
+    .popup {
+        width: 87%;
+    }
 }
 
 @media screen and (max-width: 650px) {
-    .subscribe_form {
+    /*.subscribe_form {
         text-align: center;
     }
     
@@ -234,13 +252,33 @@
     .subscribe_form_button {
         width: 340px;
         order: 1;
+    }*/
+
+    .popup_form {
+        width: 85%;
+    }
+
+    .popup_select {
+        margin-bottom: 25px;
+    }
+
+    .popup_button {
+        margin-top: 25px;
+    }
+
+    .popup_accept {
+        width: 100%;
     }
     
-    .accept {
+    /* .accept {
         margin-top: 0;
         width: 340px;
         margin-bottom: 17px;
         text-align: start;
+    } */
+    
+    .faq_questions {
+        font-size: 4.5vw;
     }
 }
 
@@ -253,8 +291,7 @@
         font-size: 22px;
     }
     
-    .main_button,
-    .subscribe_form_button {
+    .main_button {
         padding: 20px 40px;
     }
     
@@ -264,7 +301,8 @@
     
     .problems_heading,
     .oncourse_heading,
-    .subscribe_heading {
+    .subscribe_heading,
+    .faq_heading {
         font-size: 40px;
         line-height: 50px;
     }
@@ -307,6 +345,19 @@
     .author {
         margin-bottom: 80px;
     }
+
+    .image_form {
+        width: 35%;
+    }
+
+    .popup_input,
+    .popup_select {
+        padding: 15px 2px 15px 28px;
+    }
+
+    .popup_input {
+        width: 91%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -327,5 +378,27 @@
     
     .subscribe_heading {
         font-size: 38px;
+    }
+    
+    .faq_questions {
+        font-size: 4vw;
+    }
+
+    .popup_button {
+        margin-bottom: 10px;
+    }
+
+    .popup_accept {
+        text-align: start;
+    }
+
+    .checkbox_text {
+        font-size: 13px;
+    }
+
+    .popup_button,
+    .popup_input,
+    .popup_select {
+        font-size: 13px;
     }
 }

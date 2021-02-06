@@ -68,6 +68,62 @@ $(window).scroll(() => {
 
 $('.js-scroll-to').click((event)=>{
     event.preventDefault();
-    var target = $(event.target.hash)
+    const target = $(event.target.hash)
     $(window).scrollTo(target, 800);
+})
+
+
+$('.faq_accordeon').click( function (event) {
+    console.log(event);
+    $(event.target).toggleClass('visible');
+    var panel_text = $(event.currentTarget.children[1])[0];
+    panel_text.classList.toggle('visible');
+})
+
+$('#subscribe').submit(function(event){
+    event.preventDefault();
+    var form = $('form')[0];
+    var formValid = false;
+    
+    var name = $(event.target[0]).val();
+    if (!name){
+        $(event.target[0]).addClass('error');
+        formValid = false;
+    } else {
+        $(event.target[0]).removeClass('error');
+        formValid = true;
+    }
+    
+    var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    var email = $(event.target[1]).val();
+    if (re.test(String(email).toLowerCase())){
+        $(event.target[1]).removeClass('error');
+        formValid = true;
+    } else {
+        $(event.target[1]).addClass('error');
+        formValid = false;
+    }
+    
+    var activity = $(event.target[2]).val();
+    if (!activity) {
+        $(event.target[2]).addClass('error');
+        formValid = false;
+    } else {
+        $(event.target[2]).removeClass('error');
+        formValid = true;
+    }
+    
+    var accept = $(event.target[3]).is(':checked');
+    if (!accept) {
+        $(event.target[3]).addClass('error');
+        formValid = false;
+    } else {
+        $(event.target[3]).removeClass('error');
+        formValid = true;
+    }
+    
+    if (formValid) {
+        form.submit();
+    }
+    
 })
